@@ -1,0 +1,41 @@
+.container {
+  background-color: #091450;
+  padding: 1rem;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1300px;
+  gap: 1rem;
+}
+
+.navbar__list {
+  display: flex;
+}
+
+.navbar__list li,
+a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar__item {
+  margin: 0 0.8rem;
+}
+
+/* Medium screen  */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .navbar__list {
+    flex-direction: column;
+  }
+}

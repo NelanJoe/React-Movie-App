@@ -1,0 +1,27 @@
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.movies__title {
+  text-align: center;
+  margin: 1.4rem 0;
+  color: #091450;
+  font-size: 34px;
+}
+
+.movie__container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  /* Margin */
+  margin: 1.5rem 0 5rem 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .movie__container {
+    flex-direction: column;
+  }
+}

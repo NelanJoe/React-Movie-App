@@ -1,0 +1,26 @@
+.movie {
+  color: #091450;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+.movie__image {
+  border-radius: 0.8rem;
+}
+
+.movie__title {
+  margin: 1rem 0 .8rem 0;
+  font-size: 24px;
+}
+
+.movie__date {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .movie {
+    max-width: 100%;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+}
