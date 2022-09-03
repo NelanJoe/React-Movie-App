@@ -79,7 +79,7 @@ const AddMovieForm = (props) => {
           </div>
           <div>
             <h2 className={styles.form__title}>Add Movie</h2>
-            <form className={styles.form__container} onClick={handleSubmit}>
+            <form className={styles.form__container} onSubmit={handleSubmit}>
               <div className={styles.form__group}>
                 <label>Title</label>
                 <input
@@ -106,12 +106,11 @@ const AddMovieForm = (props) => {
               </div>
               <div className={styles.form__group}>
                 <label>Type</label>
-                <input
-                  onChange={handleType}
-                  id="title"
-                  type="text"
-                  value={type}
-                />
+                <select value={type} onChange={handleType}>
+                  <option value="horor">Horor</option>
+                  <option value="sci-fi">Sci-fi</option>
+                  <option value="action">Action</option>
+                </select>
                 {isTypeError && <Alert>Type wajib diisi</Alert>}
               </div>
               <div className={styles.form__group}>
